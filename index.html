@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Analysis 1</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Data Analysis 1">
+  <meta name="author" content="Dr Axel Barlow">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/zenburn.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/custom.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+    
+  <slide class="nobackground">
+    <article class="flexbox vcenter">
+      <span>
+        <img width='300px' src="assets/img/NTU_open-graph.png">
+      </span>
+    </article>
+  </slide>
+    <slide class="title-slide segue nobackground">
+  
+  <aside class="gdbar">
+    <img src="assets/img/ntu-shield.png">
+  </aside>
+  
+  <hgroup class="auto-fadein">
+    <h1>Data Analysis 1</h1>
+    <h2>BIOL10272: Practical Techniques</h2>
+    <p>Dr Axel Barlow<br/>email: axel.barlow@ntu.ac.uk</p>
+  </hgroup>
+  
+    <a href="https://github.com/draxelbarlow/BIOL10272_data_analysis_1/zipball/gh-pages" class="example">
+     Download
+    </a>
+  
+  <article></article>  
+      
+  <footer class = 'license'>
+    <a href='http://creativecommons.org/licenses/by-nc-sa/3.0/'>
+    <img width = '80px' src = 'http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png'>
+    </a>
+  </footer>
+  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  
+  <article data-timings="">
+    <!-- adding bold and italic options -->
+
+<style>
+em {
+  font-style: italic
+}
+strong {
+  font-weight: bold;
+}
+</style>
+
+<h2>Data analysis 1</h2>
+
+<ul>
+<li>Organisation</li>
+<li>Why is data analysis important?</li>
+<li>Computers and data analysis</li>
+<li>Variables</li>
+<li>Collecting data</li>
+<li>Organising data in a table</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-2" style="background:;">
+  
+  <hgroup>
+    <h2>Organisation</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-3">
+<hgroup>
+  <h2>What will you learn?</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p><img src="assets/fig/unnamed-chunk-1-1.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" width="100%" height="100%" style="display: block; margin: auto;" /></p>
+
+</article>
+<!-- Presenter Notes -->
+
+</slide>
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Organisation</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>4 online lectures</li>
+<li>Seminar 1: <code>Excel</code> and <code>R</code>. Online with optional drop in</li>
+<li>Seminar 2: <code>R</code>. Online with optional drop in</li>
+<li>Revision session</li>
+</ul>
+
+<p><img src="./assets/img/learn_wide.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" width="100%" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>How do you access software?</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>Software: <code>Excel</code> and <code>R</code> running through <code>Rstudio</code></li>
+<li>NTU supported Virtual Machines</li>
+<li>All you need is a computer, internet connection and a web browser (e.g. <code>Chrome</code>, <code>FireFox</code>)</li>
+<li>At home or on campus</li>
+<li>Full instructions later</li>
+</ul>
+
+<p><img src="./assets/img/code_wide.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" width="100%" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Where can you find additional information?</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>Discussion boards on <code>NOW</code> (post anonymously)</li>
+<li>Web resources e.g. <a href="http://www.khanacademy.org">www.khanacademy.org</a></li>
+<li>Library: <a href="http://www.ntu.ac.uk/m/library">www.ntu.ac.uk/m/library</a></li>
+<li>General statistics: <em>Data Analysis and Statistics with</em> <code>R</code>. <a href="https://dzchilds.github.io/stats-for-bio/">https://dzchilds.github.io/stats-for-bio/</a></li>
+<li>More advanced bioinformatics: <code>R</code> <em>for Data Science</em>. <a href="https://r4ds.had.co.nz/">https://r4ds.had.co.nz/</a></li>
+</ul>
+
+<p><img src="./assets/img/adult_learning.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" width="100%" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-7" style="background:;">
+  
+  <hgroup>
+    <h2>Why is data analysis important?</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>The human mind works statistically</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><q> The brain produces feelings of confidence that inform decisions the same way statistics pulls patterns out of noisy data </q></p>
+
+<p>Cold Spring Harbor Laboratory. ScienceDaily, 4 May 2016.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Supermarket X is cheaper than supermarket Y</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/supermarket.png" title="plot of chunk unnamed-chunk-5" alt="plot of chunk unnamed-chunk-5" width="100%" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-10" style="background:;">
+  
+  <hgroup>
+    <h2>Lab work also requires data analysis</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ul>
+<li>Quantitative PCR</li>
+<li>Quantify gene expression</li>
+<li>Or viral load</li>
+</ul>
+
+<p><img src="./assets/img/Qpcr-cycling.png" title="plotting example" alt="plotting example" width="100%" />
+<em>Zuzanna K. Filutowska, CC BY-SA 3.0</em></p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="./assets/img/pipette.JPG" title="plot of chunk unnamed-chunk-7" alt="plot of chunk unnamed-chunk-7" width="70%" style="display: block; margin: auto;" /></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Phosphate Assay lab</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/Screenshot from 2021-10-21 11-47-59.png" title="plot of chunk unnamed-chunk-8" alt="plot of chunk unnamed-chunk-8" width="95%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Also a tool for science communication</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><q>France seeing exponential rise...</q></p>
+
+<p><q>Flattening the Coronavirus curve...</q></p>
+
+<p><q>R number is now between 1.1 and 1.4...</q></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="slide-13" style="background:white;">
+  
+  <hgroup>
+    <h2>Also a tool for science communication</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <iframe src = 'https://coronavirus.data.gov.uk/' height='600px'></iframe>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-14" style="background:;">
+  
+  <hgroup>
+    <h2>Computers and data analysis</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>In school/college, you may have used these</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/calculator-2391810.jpg" title="plot of chunk unnamed-chunk-9" alt="plot of chunk unnamed-chunk-9" width="80%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Modern science relies on computers</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/thinkpad-computer-1155173.png" title="plot of chunk unnamed-chunk-10" alt="plot of chunk unnamed-chunk-10" width="70%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Bioinformatics and data science</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>Biology + informatics</li>
+<li>Computational analysis of biological data</li>
+<li>A key part of modern biological research</li>
+<li>Links biology, computer science, mathematics and statistics</li>
+<li>Part of the emerging field of data science</li>
+</ul>
+
+<p><img src="./assets/img/datascience_sexy.png" title="plot of chunk unnamed-chunk-11" alt="plot of chunk unnamed-chunk-11" width="70%" /></p>
+
+<p><em>Harvard Business Review</em></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-18" style="background:;">
+  
+  <hgroup>
+    <h2>Case study: Genomics</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <p><strong>The human genome</strong></p>
+
+<ul>
+<li>DNA comprising pairs of nucleotide bases</li>
+<li>3,600,000,000 total base-pairs</li>
+<li>3.6 Gigabases</li>
+<li>2 copies per cell</li>
+<li>~2 metres of DNA</li>
+</ul>
+
+<p><strong>This represents</strong></p>
+
+<ul>
+<li>1,028,571 pages of text</li>
+<li>80 boxes of copier paper</li>
+<li>1,096 years of typing</li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="./assets/img/Dna-base-flipping.svg" title="plot of chunk unnamed-chunk-12" alt="plot of chunk unnamed-chunk-12" width="100%" /></p>
+
+<p><em>Magladem96, CC BY-SA 3.0</em></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-19" style="background:;">
+  
+  <hgroup>
+    <h2>Case study: Genomics</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <p><strong>This Illumina NovaSeq 6000 produces:</strong></p>
+
+<ul>
+<li>40 billion DNA sequences (20,000,000,000)</li>
+<li>each 150 bp in length</li>
+<li>6,000 Gigabases of data</li>
+<li>equivalent to ~1,600 human genomes</li>
+<li>in &lt; 2 days</li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="./assets/img/NovaSeq_6000.jpg" title="plot of chunk unnamed-chunk-13" alt="plot of chunk unnamed-chunk-13" width="70%" /></p>
+
+<p><em>Magnus Manske, CC BY-SA 4.0</em></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-20" style="background:;">
+  
+  <hgroup>
+    <h2>Bioinformatics means you can play with cool kit</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <p><img src="./assets/img/apple-1282241.jpg" title="plot of chunk unnamed-chunk-14" alt="plot of chunk unnamed-chunk-14" width="100%" style="display: block; margin: auto;" /></p>
+
+<p><strong>Laptop</strong></p>
+
+<ul>
+<li>6 CPUs</li>
+<li>16 Gb RAM</li>
+<li>0.5 Tb Disc space</li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="./assets/img/hamilton.png" title="plot of chunk unnamed-chunk-15" alt="plot of chunk unnamed-chunk-15" width="100%" /></p>
+
+<p><strong>Hamilton</strong></p>
+
+<ul>
+<li>512 CPUs</li>
+<li>4 Tb RAM (4,000 Gb)</li>
+<li>67 Tb Disc space</li>
+</ul>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-21" style="background:;">
+  
+  <hgroup>
+    <h2>Software: <code>Microsoft Excel</code></h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ul>
+<li>Spreadsheet based program</li>
+<li>Widely used across many professions</li>
+<li>Grid of <strong>cells</strong></li>
+<li>Arranged in <strong>rows</strong> and <strong>columns</strong></li>
+<li>Cells can contain <strong>data</strong> or <strong>functions</strong></li>
+<li>Can produce graphs</li>
+<li>Can perform various statistical tests and analyses</li>
+<li>Proprietary software</li>
+<li>Max 1,048,576 rows by 16,384 columns</li>
+<li>Max 2Gb file size</li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="./assets/img/Microsoft_Office_Excel_(2018–present).svg" title="plot of chunk unnamed-chunk-16" alt="plot of chunk unnamed-chunk-16" width="40%" style="display: block; margin: auto;" /></p>
+
+<p><img src="./assets/img/Microsoft_Excel.png" title="plot of chunk unnamed-chunk-17" alt="plot of chunk unnamed-chunk-17" width="100%" /></p>
+
+<p><em>Used with permission from</em> <code>Microsoft</code>.</p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-22" style="background:;">
+  
+  <hgroup>
+    <h2>Software: <code>R</code></h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ul>
+<li><strong>Programming language</strong></li>
+<li>Executed through the <strong>command line</strong></li>
+<li>Or <code>Rstudio</code> environment</li>
+<li>Fully <strong>open source</strong></li>
+<li>Many add-on <strong>packages</strong></li>
+<li>Can handle very large files</li>
+<li>Vast range of analyses</li>
+<li>High quality graphs and diagrams</li>
+<li>Websites</li>
+<li>Reports</li>
+<li>This presentation!</li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="./assets/img/R_logo.svg.png" title="plot of chunk unnamed-chunk-18" alt="plot of chunk unnamed-chunk-18" width="30%" style="display: block; margin: auto;" /></p>
+
+<p><em>CC-BY-SA 4.0</em></p>
+
+<p><img src="./assets/img/Rstudio.png" title="plot of chunk unnamed-chunk-19" alt="plot of chunk unnamed-chunk-19" width="100%" /></p>
+
+<p><em>PAC2, AGPL</em></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="slide-23" style="background:white;">
+  
+  <hgroup>
+    <h2>Try doing this in <code>Excel</code> ;)</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="assets/fig/unnamed-chunk-20-1.gif" title="plot of chunk unnamed-chunk-20" alt="plot of chunk unnamed-chunk-20" width="95%" height="95%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-24" style="background:;">
+  
+  <hgroup>
+    <h2>Variables</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:white;">
+  
+  <hgroup>
+    <h2>Science finds things that affect other things</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/doctor-5342890.jpg" title="plot of chunk unnamed-chunk-21" alt="plot of chunk unnamed-chunk-21" width="80%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:white;">
+  
+  <hgroup>
+    <h2>Science finds things that affect other things</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/agar-60571.jpg" title="plot of chunk unnamed-chunk-22" alt="plot of chunk unnamed-chunk-22" width="85%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:white;">
+  
+  <hgroup>
+    <h2>Science finds things that affect other things</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/red-eye-frog-2815683.png" title="plot of chunk unnamed-chunk-23" alt="plot of chunk unnamed-chunk-23" width="90%" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>These things are called variables</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>A variable is something that can be measured or counted</h3>
+
+<p><strong>There are three main types:</strong></p>
+
+<ol>
+<li><p>Categorical variables</p></li>
+<li><p>Ordinal variables</p></li>
+<li><p>Quantitative variables</p>
+
+<ul>
+<li>Continuous</li>
+<li>Discrete</li>
+</ul></li>
+</ol>
+
+<h3>The type of variable determines how data should be analysed and visualised</h3>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Categorical variables</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><em>[Can be referred to as qualitative or nominal variables]</em></p>
+
+<ul class = "build incremental">
+<li>Things that have distinct categories</li>
+<li>Qualitative (assigned or named, not quantified)</li>
+<li>A fixed (or limited) number of possibilities</li>
+<li>Categories cannot be divided or multiplied</li>
+<li>Examples: 
+
+<ul>
+<li>Presence/absence of anything</li>
+<li>DNA nucleotides</li>
+<li>species</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Ordinal variables</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><em>[Can be referred to as ranked variables]</em></p>
+
+<ul class = "build incremental">
+<li>Things that can be ranked</li>
+<li>Categories that can be put in a sequence</li>
+<li>Qualitative (assigned or named, not quantified)</li>
+<li>A fixed (or limited) number of possibilities</li>
+<li>Categories cannot be divided or multiplied</li>
+<li>But we can identify a middle value</li>
+<li>Examples: 
+
+<ul>
+<li>Often used in questionnaires, e.g. dislike, indifferent, like</li>
+<li>Degrees: BSc, MSc, PhD</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Quantitative variables</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><em>[Can be referred to as numeric, interval or ratio variables]</em></p>
+
+<ul class = "build incremental">
+<li>Things that can be measured numerically</li>
+<li>Typically have <strong>units</strong></li>
+<li>Values can be divided or multiplied</li>
+<li><strong>Continuous</strong>
+
+<ul>
+<li>An infinite number of possibilities</li>
+<li>Accuracy only limited by the experimental method</li>
+<li>Temperature, distance, speed, time</li>
+</ul></li>
+<li><strong>Discrete</strong>
+
+<ul>
+<li>Numerical measurements where only certain values are possible</li>
+<li>Counts, e.g. number of patients, molecules, etc.</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-32" style="background:;">
+  
+  <hgroup>
+    <h2>Collecting data</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Collecting data</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>A variable is something that can be measured or counted</h3>
+
+<ul>
+<li>Taking a measurement or count is an <strong>observation</strong></li>
+<li>The information you collect is a <strong>value</strong> (or datum)</li>
+<li>All the values together are your <strong>data</strong></li>
+<li>The number of observations is your <strong>sample size</strong> (often expressed as <code>N</code>)</li>
+</ul>
+
+<h3>Sometimes you record multiple variables from the same thing</h3>
+
+<ul>
+<li><em>Patient number = 1234, gender = M, age = 24, heart rate = 70 bpm</em></li>
+<li>Here we have data for 4 variables, but it is a <strong>single observation</strong></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Observations should be independent</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>One observation does not affect the other</li>
+<li>Lack of independence can cause the sample size to be misjudged</li>
+<li>This is called <strong>pseudoreplication</strong></li>
+</ul>
+
+<ul class = "build incremental">
+<li><p><em>You measure the blood pressure of a single person 100 times</em></p>
+
+<ul>
+<li>100 measurements, sample size <code>N</code> = 1 person</li>
+</ul></li>
+<li><p><em>You measure the length of 100 leaves from the same tree</em></p>
+
+<ul>
+<li>100 leaves, sample size <code>N</code> = 1 tree</li>
+</ul></li>
+<li><p>Note before/after measurements are fine, but these pairs represent a single observation</p></li>
+<li><p><em>Patient blood pressure before &amp; after drug treatment</em></p>
+
+<ul>
+<li>2 blood pressure values, sample size <code>N</code> = 1 patient</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Samples should be collected at random</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>We should not bias our observations towards particular categories or values</li>
+<li>Often one of the most difficult aspects of study design!</li>
+<li>Sometimes unavoidable, requiring careful analysis and interpretation</li>
+</ul>
+
+<ul class = "build incremental">
+<li><p><em>You count the number of bird species in a woodland habitat and in a lake habitat</em></p>
+
+<ul>
+<li>Woodland birds are harder to see</li>
+</ul></li>
+<li><p><em>You work at an diabetes clinic. You investigate how many patients smoked prior to developing diabetes</em></p>
+
+<ul>
+<li>You work at an diabetes clinic: all your patients develop diabetes (some of whom happen to have smoked)</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-36" style="background:;">
+  
+  <hgroup>
+    <h2>Organising data in a table</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Tables</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>Tables are an excellent way to organise, store and analyse our data</h3>
+
+<ul>
+<li>The format is flexible, but generally:
+
+<ul>
+<li>Each <strong>row</strong> is an observation</li>
+<li>Each <strong>column</strong> is a variable</li>
+<li>The <strong>top row</strong> is the variable names</li>
+</ul></li>
+</ul>
+
+<ul class = "build incremental">
+<li>Tables can be created and saved in <code>Excel</code>, where further analysis can be carried out</li>
+<li>Bioinformaticians tend to use plain text (space, comma or tab delimited)</li>
+<li>This is an ideal data format for importing into <code>R</code></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Example tables</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>Beaver body temperature</h3>
+
+<table><thead>
+<tr>
+<th align="right">day</th>
+<th align="right">time</th>
+<th align="right">temp</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="right">346</td>
+<td align="right">840</td>
+<td align="right">36.33</td>
+</tr>
+<tr>
+<td align="right">346</td>
+<td align="right">850</td>
+<td align="right">36.34</td>
+</tr>
+<tr>
+<td align="right">346</td>
+<td align="right">900</td>
+<td align="right">36.35</td>
+</tr>
+<tr>
+<td align="right">346</td>
+<td align="right">910</td>
+<td align="right">36.42</td>
+</tr>
+<tr>
+<td align="right">346</td>
+<td align="right">920</td>
+<td align="right">36.55</td>
+</tr>
+<tr>
+<td align="right">346</td>
+<td align="right">930</td>
+<td align="right">36.69</td>
+</tr>
+<tr>
+<td align="right">346</td>
+<td align="right">940</td>
+<td align="right">36.71</td>
+</tr>
+<tr>
+<td align="right">346</td>
+<td align="right">950</td>
+<td align="right">36.75</td>
+</tr>
+<tr>
+<td align="right">346</td>
+<td align="right">1000</td>
+<td align="right">36.81</td>
+</tr>
+<tr>
+<td align="right">346</td>
+<td align="right">1010</td>
+<td align="right">36.88</td>
+</tr>
+<tr>
+<td align="right">346</td>
+<td align="right">1020</td>
+<td align="right">36.89</td>
+</tr>
+</tbody></table>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Example tables</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>Beaver body temperature: plain text</h3>
+
+<pre><code>##    day time  temp
+## 1  346  840 36.33
+## 2  346  850 36.34
+## 3  346  900 36.35
+## 4  346  910 36.42
+## 5  346  920 36.55
+## 6  346  930 36.69
+## 7  346  940 36.71
+## 8  346  950 36.75
+## 9  346 1000 36.81
+## 10 346 1010 36.88
+## 11 346 1020 36.89
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Data analysis 1</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>Organisation</li>
+<li>Why is data analysis important?</li>
+<li>Computers and data analysis</li>
+<li>Variables</li>
+<li>Collecting data</li>
+<li>Organising data in a table</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="thank-you-slide segue nobackground" id="slide-41">
+  <aside class="gdbar right"><img src="assets/img/ntu-shield.png"></aside>
+  <article class="flexbox vleft auto-fadein">
+    <h2>Next time</h2>
+    <p><strong>Barcharts, histograms, averages, and variability</strong></p>
+
+  </article>
+
+  <p class="auto-fadein" data-config-contact="">
+    
+  </p>
+</slide>
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='NA'>
+         1
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Organisation'>
+         2
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='What will you learn?'>
+         3
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Organisation'>
+         4
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='How do you access software?'>
+         5
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Where can you find additional information?'>
+         6
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='Why is data analysis important?'>
+         7
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='The human mind works statistically'>
+         8
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='Supermarket X is cheaper than supermarket Y'>
+         9
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='Lab work also requires data analysis'>
+         10
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='Phosphate Assay lab'>
+         11
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='Also a tool for science communication'>
+         12
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='Also a tool for science communication'>
+         13
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='Computers and data analysis'>
+         14
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='In school/college, you may have used these'>
+         15
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='Modern science relies on computers'>
+         16
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='Bioinformatics and data science'>
+         17
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='Case study: Genomics'>
+         18
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='Case study: Genomics'>
+         19
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='Bioinformatics means you can play with cool kit'>
+         20
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title='Software: <code>Microsoft Excel</code>'>
+         21
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=22 title='Software: <code>R</code>'>
+         22
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='Try doing this in <code>Excel</code> ;)'>
+         23
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=24 title='Variables'>
+         24
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=25 title='Science finds things that affect other things'>
+         25
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=26 title='Science finds things that affect other things'>
+         26
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=27 title='Science finds things that affect other things'>
+         27
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=28 title='These things are called variables'>
+         28
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=29 title='Categorical variables'>
+         29
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=30 title='Ordinal variables'>
+         30
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=31 title='Quantitative variables'>
+         31
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=32 title='Collecting data'>
+         32
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=33 title='Collecting data'>
+         33
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=34 title='Observations should be independent'>
+         34
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=35 title='Samples should be collected at random'>
+         35
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=36 title='Organising data in a table'>
+         36
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=37 title='Tables'>
+         37
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=38 title='Example tables'>
+         38
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=39 title='Example tables'>
+         39
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=40 title='Data analysis 1'>
+         40
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=41 title='Next time'>
+         41
+      </a>
+    </li>
+    
+    </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
