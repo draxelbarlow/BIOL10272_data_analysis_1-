@@ -15,7 +15,7 @@ assets      : {assets: ../../assets}
 license     : by-nc-sa
 github:
   user: draxelbarlow
-  repo: BIOL10272_data_analysis_1
+  repo: BIOL10272_data_analysis_1-
   branch: "gh-pages"
 ---
 
