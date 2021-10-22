@@ -44,12 +44,6 @@ strong {
 
 ## Organisation
 
---- &vcenter
-
-## What will you learn?
-
-<img src="assets/fig/unnamed-chunk-1-1.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" width="100%" height="100%" style="display: block; margin: auto;" />
-
 --- .class #id
 
 ## Organisation
@@ -59,7 +53,7 @@ strong {
 - Seminar 2: `R`. Online with optional drop in
 - Revision session
   
-<img src="./assets/img/learn_wide.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" width="100%" />
+<img src="./assets/img/learn_wide.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" width="100%" />
 
 --- .class #id
 
@@ -71,7 +65,7 @@ strong {
 - At home or on campus
 - Full instructions later
 
-<img src="./assets/img/code_wide.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" width="100%" />
+<img src="./assets/img/code_wide.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" width="100%" />
 
 --- .class #id
 
@@ -83,11 +77,17 @@ strong {
 - General statistics: *Data Analysis and Statistics with* `R`. https://dzchilds.github.io/stats-for-bio/
 - More advanced bioinformatics: `R` *for Data Science*. https://r4ds.had.co.nz/
 
-<img src="./assets/img/adult_learning.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" width="100%" />
+<img src="./assets/img/adult_learning.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" width="100%" />
 
 --- .segue .dark 
 
 ## Why is data analysis important?
+
+--- &vcenter
+
+## Maybe the most exciting part of science!
+
+<img src="assets/fig/unnamed-chunk-4-1.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" width="100%" height="100%" style="display: block; margin: auto;" />
 
 --- .class #id
 

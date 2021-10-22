@@ -50,34 +50,6 @@ strong {
 
 ## Organisation
 
---- &vcenter
-
-## What will you learn?
-
-```{r, out.width = "100%", out.height = "100%", dpi = 600, fig.align = "center", echo = FALSE}
-flow <-  grViz("digraph {
-
-graph [layout = dot, rankdir = LR]
-
-# define the global styles of the nodes. We can override these in box if we wish
-node [shape = rectangle, style = filled, fillcolor = lightblue]
-
-a [label = 'Ask \n question']
-b [label =  'Design \n experiment']
-c [label = 'Gather \n data']
-
-
-d [label= 'Analyse \n data', fillcolor=yellow, shape=oval]
-e [label= 'Answer \n question']
-
-
-# edge definitions with the node IDs
-a -> b -> c -> d -> e
-}", width = 4000)
-
-flow
-```
-
 --- .class #id
 
 ## Organisation
@@ -122,6 +94,34 @@ include_graphics("./assets/img/adult_learning.png")
 --- .segue .dark 
 
 ## Why is data analysis important?
+
+--- &vcenter
+
+## Maybe the most exciting part of science!
+
+```{r, out.width = "100%", out.height = "100%", dpi = 600, fig.align = "center", echo = FALSE}
+flow <-  grViz("digraph {
+
+graph [layout = dot, rankdir = LR]
+
+# define the global styles of the nodes. We can override these in box if we wish
+node [shape = rectangle, style = filled, fillcolor = lightblue]
+
+a [label = 'Ask \n question']
+b [label =  'Design \n experiment']
+c [label = 'Gather \n data']
+
+
+d [label= 'Analyse \n data', fillcolor=yellow, shape=oval]
+e [label= 'Answer \n question']
+
+
+# edge definitions with the node IDs
+a -> b -> c -> d -> e
+}", width = 4000)
+
+flow
+```
 
 --- .class #id
 
